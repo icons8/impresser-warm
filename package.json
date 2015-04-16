@@ -1,0 +1,22 @@
+{
+  "name": "impress-warm",
+  "version": "0.1.0",
+  "description": "Impress warm cache service",
+  "repository": {
+    "url": "https://github.com/icons8/impress-warm"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "bin": {
+    "impress": "./bin/impress-warm.js"
+  },
+  "dependencies": {
+    "yargs": "^3.6.0",
+    "merge": "^1.2.0",
+    "bluebird": "^2.9.24",
+    "htmlparser2": "^3.8.2",
+    "request": "^2.55.0"
+  }
+}
