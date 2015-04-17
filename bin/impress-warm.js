@@ -11,7 +11,7 @@ var
     .describe('impress-host', 'Host of impress server by default localhost:8497')
     .describe('parallel', 'Count of parallels requests by default 2 on each CPU cores')
     .describe('request-timeout', 'Request timeout by default 61000')
-    .describe('min-request-interval', 'Minimum request interval by default 1000')
+    .describe('min-request-interval', 'Minimum request interval by default 200')
     .describe('sitemap', 'Url to sitemap xml file, can be multiple')
     .describe('site-host', 'Host of target site by default icons8.com')
     .describe('impress-force', 'Use impress-force header for force cache updating by default true')
