@@ -14,6 +14,7 @@ var
     .describe('min-request-interval', 'Minimum request interval by default 1000')
     .describe('sitemap', 'Url to sitemap xml file, can be multiple')
     .describe('site-host', 'Host of target site by default icons8.com')
+    .describe('impress-force', 'Use impress-force header for force cache updating by default true')
     .describe('config', 'Path to config file, can be multiple')
     .help('h')
     .alias('h', 'help')
