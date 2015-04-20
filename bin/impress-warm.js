@@ -9,6 +9,7 @@ var
   argv = yargs
     .usage('Usage: $0 [options]')
     .describe('impress-host', 'Host of impress server by default localhost:8497')
+    .describe('impress-frontend-mode', 'Impress server launched as frontend by default true')
     .describe('parallel', 'Count of parallels requests by default 2 on each CPU cores')
     .describe('request-timeout', 'Request timeout by default 61000')
     .describe('min-request-interval', 'Minimum request interval by default 200')
