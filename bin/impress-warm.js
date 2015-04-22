@@ -7,7 +7,7 @@ var
   yargs = require('yargs'),
 
   argv = yargs
-    .usage('Usage: $0 [options]')
+    .usage('Usage: $0 [config.json[, ...config.json]] [options]')
     .describe('impress-host', 'Host of impress server by default localhost:8497')
     .describe('impress-frontend-mode', 'Impress server launched as frontend by default true')
     .describe('parallel', 'Count of parallels requests by default 2 on each CPU cores')
@@ -21,6 +21,11 @@ var
     .help('h')
     .alias('h', 'help')
     .epilog('impress-warm (https://github.com/icons8/impress-warm)')
-    .argv;
+    .argv,
 
-new Application(argv).run();
+  options;
+
+options = argv;
+options.config = argv._.concat(options.config);
+
+new Application(options).run();
