@@ -8,8 +8,8 @@ var
 
   argv = yargs
     .usage('Usage: $0 [config.json[, ...config.json]] [options]')
-    .describe('impress-host', 'Host of impress server by default localhost:8497')
-    .describe('impress-frontend-mode', 'Impress server launched as frontend by default true')
+    .describe('impresser-host', 'Host of impresser server by default localhost:8497')
+    .describe('impresser-frontend', 'Impresser server launched as frontend by default true')
     .describe('parallel', 'Count of parallels requests by default 2 on each CPU cores')
     .describe('request-timeout', 'Request timeout by default 61000')
     .describe('min-request-interval', 'Minimum request interval by default 1000')
@@ -20,7 +20,7 @@ var
     .describe('config', 'Path to config file, can be multiple')
     .help('h')
     .alias('h', 'help')
-    .epilog('impress-warm (https://github.com/icons8/impress-warm)')
+    .epilog('impresser-warm (https://github.com/icons8/impresser-warm)')
     .argv,
 
   options;

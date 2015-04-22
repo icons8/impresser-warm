@@ -1,16 +1,16 @@
 {
-  "name": "impress-warm",
+  "name": "impresser-warm",
   "version": "0.1.1",
-  "description": "Impress warm cache service",
+  "description": "Impresser warm cache service",
   "repository": {
-    "url": "https://github.com/icons8/impress-warm"
+    "url": "https://github.com/icons8/impresser-warm"
   },
   "license": "MIT",
   "engines": {
     "node": ">= 0.10.0"
   },
   "bin": {
-    "impress": "./bin/impress-warm.js"
+    "impresser-warm": "./bin/impresser-warm.js"
   },
   "dependencies": {
     "yargs": "^3.6.0",
